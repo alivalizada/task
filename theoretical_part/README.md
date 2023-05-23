@@ -18,4 +18,4 @@ Architecture consists of below elements:
 * Data is being saved/pulled from Backend instances to Amazon Relational Database Service
 * Amazon RDS replica helps to have a backup for master, also make reads faster
 
-
+![alt text](https://github.com/alivalizada/task/blob/task-1/theoretical_part/aws_architecture.jpg?raw=true)
