@@ -1,3 +1,5 @@
+# Practical part
+
 As I have working experience in Kubernetes, I have decided to prepare deployment in it instead of Docker Swarm.
 
 Firstly, we will need to install Kubernetes on local host from official website: https://kubernetes.io/docs/tasks/tools/
