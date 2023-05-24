@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: php-code-configmap
+data:
+  index.php: |-
+    <html>
+    <head>
+    <title>PHP Test</title>
+    </head>
+    <body>
+    <?php echo '<p>Hello World</p>'; ?>
+    </body>
+    </html>
