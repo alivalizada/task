@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php
+spec:
+  selector:
+    matchLabels:
+      app: php
+  template:
+    metadata:
+      labels:
+        app: php
+    spec:
+      containers:
+        - name: php
+          image: php:latest
+          ports:
+            - containerPort: 9000
+          volumeMounts:
+            - name: php-code
+              mountPath: /var/www/html
+          resources:
+            limits:
+              cpu: 50m
+              memory: 50Mi
+      volumes:
+        - name: php-code
+          configMap:
+            name: php-code-configmap
